@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins','sans-serif';
+}
+:root{
+    --bg-color: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 4rem 9% 2rem;
+}
+span{
+    color: var(--main-color);
+}
+/**/
+.animate-charcter{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #3b99b5 0%,
+        #8fa8aa 29%,
+        #fafafa 67%,
+        #3b99b5 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 15rem;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+/**/
+.heading{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 5rem;
+}
+.home{
+    background-size: 100% 100%;
+    background-image:url("img/lagotiticaca.png");
+}
+
+.home-content{
+    display: flex;
+    margin-top: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+.heading2{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 3rem;
+}
+.contact2{
+    margin-top: 19rem;
+    text-align: center;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 2rem 1rem 2rem 0;
+    transition: .5s ease;
+}
+
+.footer2{
+    align-items: center;
+    text-align: center;
+    margin-top: 2.7rem;
+}
+.footer2 p{
+    font-size: 1.6rem;
+}
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+@media (max-width:1366px){
+    section{
+        padding: 3rem 9% 2rem;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .animate-charcter{
+        font-size: 11rem;
+    }
+    .home-content{
+        margin-top: 18rem;
+    }
+    .contact2{
+        margin-top: 15rem;
+    }
+    .heading2{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .social-media a{
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;
+        margin: 1rem 1rem 1.5rem 0;
+    }
+    .footer2{
+        margin-top: 2rem;
+    }
+    .footer2 p{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width:990px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .animate-charcter{
+        font-size: 8rem;
+    }
+    .home-content{
+        margin-top: 16rem;
+    }
+    .contact2{
+        margin-top: 13rem;
+    }
+    .heading2{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .social-media a{
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1rem 1rem 1.5rem 0;
+    }
+    .footer2{
+        margin-top: 2rem;
+    }
+    .footer2 p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:834px){
+
+}
+@media (max-width:800px){
+    .heading{
+        font-size: 1.5rem;
+    }
+    .animate-charcter{
+        font-size: 6rem;
+    }
+    .home-content{
+        margin-top: 18rem;
+    }
+    .contact2{
+        margin-top: 14rem;
+    }
+    .heading2{
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .social-media a{
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1rem 1rem 1.5rem 0;
+    }
+    .footer2{
+        margin-top: 2rem;
+    }
+    .footer2 p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:617px){
+
+}
+@media (max-width:414px){
+    .heading{
+        font-size: 2rem;
+    }
+    .animate-charcter{
+        margin-top: 2rem;
+        font-size: 4.5rem;
+    }
+    .home-content{
+        margin-top: 20rem;
+    }
+    .contact2{
+        margin-top: 15rem;
+    }
+    .heading2{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    .social-media a{
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        margin: 1rem 1rem 1.5rem 0;
+    }
+    .footer2{
+        margin-top: 2rem;
+    }
+    .footer2 p{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:375px){
+
+}
